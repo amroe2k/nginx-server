@@ -19,7 +19,7 @@ REM 3. Commit perubahan
 echo [3/4] Melakukan commit...
 set /p commit_message="Masukkan pesan commit: "
 if "%commit_message%"=="" (
-    set commit_message=Update files
+    set commit_message=Update Files
 )
 git commit -m "%commit_message%"
 echo.
