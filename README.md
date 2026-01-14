@@ -81,6 +81,14 @@ CertUtil: -addstore command completed successfully.
 - Pilih [2] untuk menghapus proyek (script akan menghapus folder proyek, file konfigurasi NGINX, dan entri hosts terkait). Pastikan NGINX dimatikan sebelum menghapus.
 - Setelah membuat atau menghapus proyek, restart NGINX agar konfigurasi baru berlaku.
 
+## Urutan Perintah yang harus dijalankan :
+
+1. `setup-root-ca.bat` (generate SSL untuk di Import ke Windows pada folder ssl-ca)
+2. `generate-ssl.bat` (generate ulang ssl key dashboard dan phpmyadmin)
+3. `edit-hosts.bat` (edit file hosts windows)
+4. `web-manager.bat` (Tambah/Hapus proyek)
+5. `start-webserver.bat` (aktifkan Nginx Web Server)
+
 ## Tools Web
 
 Beberapa alat web yang umum tersedia di lingkungan pengembangan ini:
@@ -159,13 +167,6 @@ Buat issue baru dengan:
 - Root CA yang dibuat oleh `setup-root-ca.bat` sebaiknya hanya digunakan untuk pengembangan lokal.
 - Jangan gunakan sertifikat CA lokal untuk layanan publik.
 
-## Urutan Perintah yang harus dijalankan :
-
-1. `setup-root-ca.bat` (generate SSL untuk di Import ke Windows pada folder ssl-ca)
-2. `generate-ssl.bat` (generate ulang ssl key dashboard dan phpmyadmin)
-3. `edit-hosts.bat` (edit file hosts windows)
-4. `web-manager.bat` (Tambah/Hapus proyek)
-5. `start-webserver.bat` (aktifkan Nginx Web Server)
 
 ## Kontak
 
