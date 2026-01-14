@@ -45,6 +45,7 @@ if not exist "%CA_DIR%\WebDevRootCA.crt" (
 :: Buat folder sites-enabled jika belum ada
 if not exist "%SITES_DIR%" mkdir "%SITES_DIR%"
 
+:MAIN_MENU
 :: Deteksi semua folder proyek di www\
 set idx=0
 for /d %%D in ("%WWW_DIR%\*") do (
@@ -67,30 +68,37 @@ echo Pilih proyek:
 for /l %%i in (1,1,%idx%) do (
     echo [%%i] !proj[%%i]!
 )
+echo [0] Keluar
 echo.
 
-set /p "choice=Nomor proyek [1-%idx%]: "
+set /p "choice=Nomor proyek [0-%idx%]: "
+
+:: Cek pilihan Keluar
+if "%choice%"=="0" (
+    echo [INFO] Keluar dari program...
+    exit /b
+)
 
 :: Validasi input
 for /f "delims=0123456789" %%i in ("%choice%") do (
     echo [ERROR] Input harus angka.
     pause
-    exit /b
+    goto MAIN_MENU
 )
 if "%choice%"=="" (
     echo [ERROR] Input tidak boleh kosong.
     pause
-    exit /b
+    goto MAIN_MENU
 )
 if %choice% lss 1 (
     echo [ERROR] Nomor minimal 1.
     pause
-    exit /b
+    goto MAIN_MENU
 )
 if %choice% gtr %idx% (
     echo [ERROR] Nomor maksimal %idx%.
     pause
-    exit /b
+    goto MAIN_MENU
 )
 
 for /f "tokens=1" %%i in ("%choice%") do set "PROJECT_NAME=!proj[%%i]!"
@@ -155,7 +163,7 @@ if errorlevel 1 (
     echo [ERROR] Gagal membuat private key atau CSR.
     del /q "%CSR_CONFIG%" 2>nul
     pause
-    exit /b
+    goto MAIN_MENU
 )
 
 :: Tanda tangani dengan Root CA
@@ -173,7 +181,7 @@ if errorlevel 1 (
     echo [ERROR] Gagal menandatangani sertifikat dengan Root CA.
     del /q "%CSR%" "%CSR_CONFIG%" 2>nul
     pause
-    exit /b
+    goto MAIN_MENU
 )
 
 :: Bersihkan file sementara
@@ -242,4 +250,6 @@ echo [INFO] JANGAN LUPA: Restart NGINX agar HTTPS aktif
 echo ==================================================
 echo.
 pause
-exit /b
+
+:: Kembali ke menu utama
+goto MAIN_MENU
