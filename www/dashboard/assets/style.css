@@ -1,0 +1,108 @@
+/* assets/style.css */
+
+body {
+  background-color: #f9fbfd;
+  color: #4a5568;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* Subdomain Badge - Elegan & Interaktif */
+.subdomain-badge {
+  background: #f0f4ff;
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.35em 0.75em;
+  border-radius: 12px;
+  border: 1px solid #dbe2ff;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+}
+
+.subdomain-badge:hover {
+  background: #e0e8ff;
+  color: #3a56e6;
+  border-color: #c2d0ff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(67, 97, 238, 0.15);
+}
+
+/* Card & Project */
+.project-card {
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: all 0.25s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(138, 180, 248, 0.25);
+}
+
+/* Badge PHP */
+.badge-php {
+  background-color: #dbeafe;
+  color: #3b82f6;
+  font-weight: 500;
+  padding: 0.4em 0.6em;
+  border-radius: 6px;
+}
+
+/* Badge Database */
+.badge-db {
+  background-color: #dcfce7;
+  color: #16a34a;
+  font-weight: 500;
+  padding: 0.35em 0.6em;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Footer */
+footer {
+  color: #a0aec0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .subdomain-badge {
+    font-size: 0.875rem;
+    padding: 0.3em 0.65em;
+  }
+}
+
+/* Filter Enhancement */
+.form-check-label {
+  white-space: nowrap;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-check-input:checked + .form-check-label {
+  color: #4361ee;
+  font-weight: 600;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+  .form-check {
+    min-width: 120px;
+  }
+}
+
+.project-card {
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: all 0.25s ease;
+  height: 100%;
+  color: #4a5568;
+  backdrop-filter: blur(2px);
+}

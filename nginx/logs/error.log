@@ -1,0 +1,377 @@
+2025/12/20 01:02:13 [error] 21376#12784: *1 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/12/20 01:04:18 [error] 21376#12784: *4 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2025/12/20 02:40:04 [emerg] 20100#9756: unknown directive "ECHO" in E:\Web-Server\nginx/conf/sites-enabled/cbt-sekolah.conf:7
+2025/12/20 02:51:39 [error] 14968#18296: *1 CreateFile() "E:\Web-Server\nginx/html/cbt-sekolah" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /cbt-sekolah HTTP/1.1", host: "localhost"
+2025/12/20 02:56:23 [error] 14968#18296: *7 "E:\Web-Server\nginx/html/cbt-sekolah/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /cbt-sekolah/ HTTP/1.1", host: "localhost"
+2025/12/20 02:57:55 [error] 5380#17208: *1 "E:\Web-Server\nginx/html/cbt-sekolah/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /cbt-sekolah/ HTTP/1.1", host: "localhost"
+2025/12/20 03:29:24 [error] 19788#14312: *1 CreateFile() "E:\Web-Server\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/12/20 03:29:52 [error] 19788#14312: *1 CreateFile() "E:\Web-Server\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/12/20 09:52:05 [error] 11360#22496: *1 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/12/20 22:40:20 [error] 21444#7704: *1 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2025/12/20 23:22:08 [error] 4768#18948: *1 CreateFile() "E:\Web-Server\nginx/html/cbt-test.lokal" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /cbt-test.lokal HTTP/1.1", host: "localhost"
+2025/12/20 23:23:56 [error] 4768#18948: *4 CreateFile() "E:\Web-Server\nginx/html/cbt-test.lokal" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /cbt-test.lokal HTTP/1.1", host: "localhost"
+2025/12/20 23:24:28 [error] 4768#18948: *4 "E:\Web-Server\nginx/html/cbt-test.lokal/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /cbt-test.lokal/ HTTP/1.1", host: "localhost"
+2025/12/20 23:25:03 [error] 4768#18948: *4 CreateFile() "E:\Web-Server\nginx/html/cbt-test" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /cbt-test HTTP/1.1", host: "localhost"
+2025/12/20 23:26:55 [error] 4768#18948: *10 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/info.php"
+2025/12/20 23:28:32 [error] 4768#18948: *13 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "cbt-test.local", referrer: "http://cbt-test.local/"
+2025/12/20 23:29:26 [error] 19712#14888: *1 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/12/20 23:57:00 [error] 4248#18264: *11 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "POST /wp-admin/upgrade.php?step=upgrade_db HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local"
+2025/12/20 23:58:17 [error] 4248#18264: *16 FastCGI sent in stderr: "PHP Notice:  Undefined variable: opt_allmapel in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 6
+PHP Warning:  mysqli::query(): Couldn't fetch mysqli in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 11
+PHP Notice:  Undefined variable: opt_waktutoken in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 14
+PHP Notice:  Undefined variable: opt_timezone in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 15
+PHP Notice:  Undefined variable: opt_allmapel in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 16
+PHP Notice:  Undefined variable: opt_shownilai in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 17
+PHP Notice:  Undefined variable: opt_bolehlogout in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 18
+PHP Notice:  Undefined variable: opt_bolehdaftar in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 19
+PHP Notice:  Undefined variable: opt_autotoken in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 20
+PHP Notice:  Undefined variable: opt_autologin in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 21
+PHP Notice:  Undefined variable: opt_welcome in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 22
+PHP Notice:  Undefined variable: opt_pesanbanned in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 23
+PHP Notice:  Undefined variable: opt_minimalsisawaktu in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 24
+PHP Notice:  Undefined variable: opt_modetimer in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\api-18575621\getmapel.php on line 25
+PHP Notice:  Undefined variable: opt_localsto
+2025/12/21 00:00:55 [error] 4248#18264: *30 FastCGI sent in stderr: "PHP Warning:  file_get_contents(E:\Web-Server\www\cbt-test/wp-content/plugins/wps-hide-login_backup/wps-hide-login.php): failed to open stream: No such file or directory in E:\Web-Server\www\cbt-test\wp-includes\functions.php on line 6910" while reading upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /wp-admin/update.php?action=update-selected&plugins=wps-hide-login_backup%2Fwps-hide-login.php%2Cwps-limit-login%2Fwps-limit-login.php%2Cwps-notice-center%2Fwps-notice-center.php&_wpnonce=329cb06680 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/update-core.php?action=do-plugin-upgrade"
+2025/12/21 00:12:44 [error] 19268#5328: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function [obfuscated]() in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php:35
+Stack trace:
+#0 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): {closure}(Object(WP_REST_Server))
+#1 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(636): do_action('rest_api_init', Object(WP_REST_Server))
+#4 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(460): rest_get_server()
+#5 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#6 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#7 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#8 E:\Web-Server\www\cbt-test\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 E:\Web-Server\www\cb in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /wp-json/wp/v2/users/me?context=edit&_locale=user HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/options-general.php"
+2025/12/21 00:12:49 [error] 19268#5328: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function [obfuscated]() in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php:35
+Stack trace:
+#0 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): {closure}(Object(WP_REST_Server))
+#1 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(636): do_action('rest_api_init', Object(WP_REST_Server))
+#4 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(460): rest_get_server()
+#5 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#6 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#7 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#8 E:\Web-Server\www\cbt-test\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 E:\Web-Server\www\cb in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /wp-json/wp/v2/users/me?context=edit&_locale=user HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/options-general.php"
+2025/12/21 00:12:54 [error] 19268#5328: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function [obfuscated]() in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php:35
+Stack trace:
+#0 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): {closure}(Object(WP_REST_Server))
+#1 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(636): do_action('rest_api_init', Object(WP_REST_Server))
+#4 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(460): rest_get_server()
+#5 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#6 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#7 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#8 E:\Web-Server\www\cbt-test\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 E:\Web-Server\www\cb in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /wp-json/wp/v2/users/me?context=edit&_locale=user HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/options-general.php"
+2025/12/21 00:13:07 [error] 19268#5328: *5 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function [obfuscated]() in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php:35
+Stack trace:
+#0 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): {closure}(Object(WP_REST_Server))
+#1 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(636): do_action('rest_api_init', Object(WP_REST_Server))
+#4 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(460): rest_get_server()
+#5 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#6 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#7 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#8 E:\Web-Server\www\cbt-test\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 E:\Web-Server\www\cb in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /wp-json/wp/v2/users/me?context=edit&_locale=user HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 00:13:37 [error] 19268#5328: *5 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function [obfuscated]() in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php:35
+Stack trace:
+#0 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): {closure}(Object(WP_REST_Server))
+#1 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(636): do_action('rest_api_init', Object(WP_REST_Server))
+#4 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(460): rest_get_server()
+#5 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#6 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#7 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#8 E:\Web-Server\www\cbt-test\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 E:\Web-Server\www\cb in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /wp-json/wp/v2/users/me?context=edit&_locale=user HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 00:17:33 [error] 19268#5328: *37 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function [obfuscated]() in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php:35
+Stack trace:
+#0 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): {closure}(Object(WP_REST_Server))
+#1 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(636): do_action('rest_api_init', Object(WP_REST_Server))
+#4 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(460): rest_get_server()
+#5 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#6 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#7 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#8 E:\Web-Server\www\cbt-test\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 E:\Web-Server\www\cb in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /wp-json/wp/v2/users/me?context=edit&_locale=user HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 00:18:15 [error] 13280#17248: *2 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by the PHP 8.2 ionCube Encoder can run on PHP 8.2.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/options-general.php"
+2025/12/21 00:18:21 [error] 13280#17248: *2 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by the PHP 8.2 ionCube Encoder can run on PHP 8.2.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/options-general.php"
+2025/12/21 00:18:34 [error] 13280#17248: *2 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by the PHP 8.2 ionCube Encoder can run on PHP 8.2.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 00:18:56 [error] 12996#10588: *1 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function [obfuscated]() in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php:35
+Stack trace:
+#0 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): {closure}(Object(WP_REST_Server))
+#1 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(636): do_action('rest_api_init', Object(WP_REST_Server))
+#4 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(460): rest_get_server()
+#5 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#6 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#7 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#8 E:\Web-Server\www\cbt-test\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 E:\Web-Server\www\cb in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /wp-json/wp/v2/users/me?context=edit&_locale=user HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 00:32:40 [error] 14252#11860: *1 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/12/21 00:38:59 [error] 19628#1448: *3 CreateFile() "E:\Web-Server\nginx/html/info.php" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /info.php HTTP/1.1", host: "localhost"
+2025/12/21 00:40:55 [error] 11756#12324: *1 CreateFile() "E:\Web-Server\nginx/html/cbt-test" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /cbt-test HTTP/1.1", host: "localhost"
+2025/12/21 00:41:25 [error] 11756#12324: *1 CreateFile() "E:\Web-Server\nginx/html/loader-wizard" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /loader-wizard HTTP/1.1", host: "localhost"
+2025/12/21 00:45:59 [error] 4776#17812: *13 CreateFile() "E:\Web-Server\nginx/html/loader-wizard17" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /loader-wizard17 HTTP/1.1", host: "localhost"
+2025/12/21 00:46:37 [error] 4776#17812: *22 "E:\Web-Server\nginx/html/spmb-nisn/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /spmb-nisn/ HTTP/1.1", host: "localhost"
+2025/12/21 00:46:38 [error] 4776#17812: *22 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/spmb-nisn/"
+2025/12/21 00:46:51 [error] 4776#17812: *22 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard.php"
+2025/12/21 00:46:52 [error] 4776#17812: *13 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard.php"
+2025/12/21 00:46:52 [error] 4776#17812: *22 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard.php"
+2025/12/21 00:47:42 [error] 4776#17812: *13 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard17.php"
+2025/12/21 00:47:42 [error] 4776#17812: *22 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard17.php"
+2025/12/21 00:47:43 [error] 4776#17812: *13 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard17.php"
+2025/12/21 00:47:43 [error] 4776#17812: *22 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard17.php"
+2025/12/21 00:48:39 [error] 4776#17812: *22 FastCGI sent in stderr: "PHP Warning:  PHP Request Startup: Failed to open stream: No such file or directory in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /loader-wizard17.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2025/12/21 00:48:54 [error] 4776#17812: *22 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard.php"
+2025/12/21 00:48:55 [error] 4776#17812: *13 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard.php"
+2025/12/21 00:53:43 [error] 4776#17812: *74 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 172.16.20.2, server: , request: "GET /favicon.ico HTTP/1.1", host: "172.16.20.2", referrer: "http://172.16.20.2/"
+2025/12/21 00:53:57 [error] 4776#17812: *74 CreateFile() "E:\Web-Server\nginx/html/cbt-test" failed (2: The system cannot find the file specified), client: 172.16.20.2, server: , request: "GET /cbt-test HTTP/1.1", host: "172.16.20.2"
+2025/12/21 00:55:19 [error] 6436#22272: *3 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Call to undefined function [obfuscated]() in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php:35
+Stack trace:
+#0 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): {closure}(Object(WP_REST_Server))
+#1 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#2 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#3 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(636): do_action('rest_api_init', Object(WP_REST_Server))
+#4 E:\Web-Server\www\cbt-test\wp-includes\rest-api.php(460): rest_get_server()
+#5 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(341): rest_api_loaded(Object(WP))
+#6 E:\Web-Server\www\cbt-test\wp-includes\class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#7 E:\Web-Server\www\cbt-test\wp-includes\plugin.php(570): WP_Hook->do_action(Array)
+#8 E:\Web-Server\www\cbt-test\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#9 E:\Web-Server\www\cb in E:\Web-Server\www\cbt-test\wp-content\themes\unbk\restapi.php on line 35" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /wp-json/wp/v2/users/me?context=edit&_locale=user HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 00:57:20 [error] 13636#10356: *5 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 00:59:21 [error] 13636#10356: *7 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 01:01:22 [error] 13636#10356: *9 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 01:03:23 [error] 13636#10356: *11 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 01:05:24 [error] 13636#10356: *13 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 01:07:25 [error] 13636#10356: *15 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/wp-admin/"
+2025/12/21 01:43:17 [error] 13636#10356: *21 directory index of "E:/Web-Server/www/erapor-sekolah/" is forbidden, client: 127.0.0.1, server: erapor-sekolah.local, request: "GET / HTTP/1.1", host: "erapor-sekolah.local"
+2025/12/21 01:43:32 [error] 13636#10356: *21 directory index of "E:/Web-Server/www/erapor-sekolah/" is forbidden, client: 127.0.0.1, server: erapor-sekolah.local, request: "GET / HTTP/1.1", host: "erapor-sekolah.local"
+2025/12/21 02:26:13 [error] 17404#24972: *1 directory index of "E:/Web-Server/www/erapor-sekolah/" is forbidden, client: 127.0.0.1, server: erapor-sekolah.local, request: "GET / HTTP/1.1", host: "erapor-sekolah.local"
+2025/12/21 02:26:19 [error] 17404#24972: *1 directory index of "E:/Web-Server/www/erapor-sekolah/" is forbidden, client: 127.0.0.1, server: erapor-sekolah.local, request: "GET / HTTP/1.1", host: "erapor-sekolah.local"
+2025/12/21 02:41:27 [error] 20504#6968: *9 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "erapor-rdm.local", referrer: "http://erapor-rdm.local/"
+2025/12/21 03:01:24 [error] 14252#24464: *15 directory index of "E:/Web-Server/www/phpmyadmin/" is forbidden, client: 127.0.0.1, server: phpmyadmin.local, request: "GET / HTTP/1.1", host: "phpmyadmin.local"
+2025/12/21 03:19:03 [error] 17504#25288: *69 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local"
+2025/12/21 03:19:04 [error] 17504#25288: *69 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://cbt-test.local/"
+2025/12/21 03:19:11 [error] 17504#25288: *73 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\erapor-rdm\index.php has been encoded by the ionCube Encoder for PHP 7.2. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: erapor-rdm.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-rdm.local", referrer: "http://erapor-rdm.local/"
+2025/12/21 03:58:08 [error] 18040#22552: *14 CreateFile() "E:\Web-Server\nginx/html/dashboard" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /dashboard HTTP/1.1", host: "localhost"
+2025/12/21 03:58:09 [error] 18040#22552: *14 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/dashboard"
+2025/12/21 04:01:37 [error] 18040#22552: *17 CreateFile() "E:\Web-Server\nginx/html/dashboard" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /dashboard HTTP/1.1", host: "localhost"
+2025/12/21 04:02:31 [error] 18040#22552: *17 CreateFile() "E:\Web-Server\nginx/html/dashboard" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /dashboard HTTP/1.1", host: "localhost"
+2025/12/21 04:02:46 [error] 18040#22552: *17 CreateFile() "E:\Web-Server\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/12/21 04:03:05 [error] 26472#24756: *1 CreateFile() "E:\Web-Server\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/12/21 04:03:09 [error] 26472#24756: *1 CreateFile() "E:\Web-Server\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/12/21 04:04:15 [error] 26472#24756: *6 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "dashboard.local", referrer: "http://dashboard.local/"
+2025/12/21 04:29:42 [error] 25616#13952: *7 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: dashboard.local, request: "GET /index.php?run=create HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.local", referrer: "http://dashboard.local/index.php"
+2025/12/21 05:08:06 [error] 25480#11072: *13 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local"
+2025/12/21 05:08:13 [error] 25480#11072: *10 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: erapor-rdm.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-rdm.local", referrer: "http://erapor-rdm.local/"
+2025/12/21 05:08:23 [error] 25480#11072: *19 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: phpmyadmin.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "phpmyadmin.local"
+2025/12/21 05:11:06 [error] 8092#932: *8 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: erapor-rdm.local, request: "GET /info.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-rdm.local"
+2025/12/21 05:11:10 [error] 8092#932: *11 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: dashboard.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.local"
+2025/12/21 05:12:27 [error] 8092#932: *15 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /info.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2025/12/21 05:18:15 [error] 15540#6088: *2 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/12/21 05:19:30 [error] 15540#6088: *33 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 7.4.33. in E:\Web-Server\www\erapor-sekolah\vendor\composer\platform_check.php:26
+Stack trace:
+#0 E:\Web-Server\www\erapor-sekolah\vendor\composer\autoload_real.php(25): require()
+#1 E:\Web-Server\www\erapor-sekolah\vendor\autoload.php(22): ComposerAutoloaderInit5f7c6961028622df3c9b49d07f3b670f::getLoader()
+#2 E:\Web-Server\www\erapor-sekolah\public\index.php(13): require('E:\\Web-Server\\w...')
+#3 {main}
+  thrown in E:\Web-Server\www\erapor-sekolah\vendor\composer\platform_check.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: erapor-sekolah.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-sekolah.local"
+2025/12/21 05:22:41 [error] 8228#17388: *5 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.34. in E:\Web-Server\www\erapor-sekolah\vendor\composer\platform_check.php:26
+Stack trace:
+#0 E:\Web-Server\www\erapor-sekolah\vendor\composer\autoload_real.php(25): require()
+#1 E:\Web-Server\www\erapor-sekolah\vendor\autoload.php(22): ComposerAutoloaderInit5f7c6961028622df3c9b49d07f3b670f::getLoader()
+#2 E:\Web-Server\www\erapor-sekolah\public\index.php(13): require('E:\\Web-Server\\w...')
+#3 {main}
+  thrown in E:\Web-Server\www\erapor-sekolah\vendor\composer\platform_check.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: erapor-sekolah.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-sekolah.local"
+2025/12/21 05:43:26 [error] 21356#13844: *20 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\erapor-rdm\index.php has been encoded by the ionCube Encoder for PHP 7.2. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: erapor-rdm.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-rdm.local"
+2025/12/21 05:44:07 [error] 21356#13844: *32 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\cbt-test\wp-content\themes\unbk\functions.php has been encoded by the ionCube Encoder for PHP 7.1. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: cbt-test.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cbt-test.local", referrer: "http://dashboard.local/"
+2025/12/21 05:44:07 [error] 21356#13844: *20 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file E:\Web-Server\www\erapor-rdm\index.php has been encoded by the ionCube Encoder for PHP 7.2. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: erapor-rdm.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-rdm.local", referrer: "http://dashboard.local/"
+2025/12/21 06:12:42 [error] 21356#13844: *75 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected identifier "PHP_VERSION", expecting ")" in E:\Web-Server\www\dashboard\includes\functions.php on line 91" while reading response header from upstream, client: 127.0.0.1, server: dashboard.local, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.local"
+2025/12/21 06:12:42 [error] 21356#13844: *75 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected identifier "PHP_VERSION", expecting ")" in E:\Web-Server\www\dashboard\includes\functions.php on line 91" while reading response header from upstream, client: 127.0.0.1, server: dashboard.local, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.local", referrer: "http://dashboard.local/"
+2025/12/21 06:33:05 [error] 21356#13844: *95 CreateFile() "E:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/loader-wizard17.php"
+2025/12/30 11:44:04 [error] 17996#3344: *1 CreateFile() "D:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/12/30 11:44:39 [error] 17996#3344: *1 CreateFile() "D:\Web-Server\nginx/html/dashboard" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /dashboard HTTP/1.1", host: "localhost"
+2025/12/30 14:17:28 [error] 10520#8344: *22 directory index of "D:/Web-Server/www/web-tester/" is forbidden, client: 127.0.0.1, server: web-tester.local, request: "GET / HTTP/1.1", host: "web-tester.local", referrer: "http://dashboard.local/"
+2025/12/30 17:11:21 [error] 12332#12572: *1 CreateFile() "D:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/12/30 17:39:15 [error] 12332#12572: *57 CreateFile() "D:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "web-tester.local", referrer: "http://web-tester.local/"
+2025/12/30 20:54:41 [warn] 14072#12564: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/dashboard.conf:24
+2025/12/30 20:54:41 [emerg] 14072#12564: CreateDirectory() "D:\Web-Server\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2025/12/30 20:57:26 [warn] 9192#6824: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/dashboard.conf:24
+2025/12/30 20:57:26 [warn] 6600#6488: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/dashboard.conf:24
+2025/12/30 21:12:33 [warn] 13560#12396: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/dashboard.conf:24
+2025/12/30 21:12:33 [warn] 13560#12396: conflicting server name "dashboard.local" on 0.0.0.0:443, ignored
+2025/12/30 21:12:33 [warn] 9292#1452: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/dashboard.conf:24
+2025/12/30 21:12:33 [warn] 9292#1452: conflicting server name "dashboard.local" on 0.0.0.0:443, ignored
+2025/12/30 21:46:00 [error] 14896#3988: *15 CreateFile() "D:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "phpmyadmin.test", referrer: "http://phpmyadmin.test/"
+2025/12/30 21:56:34 [error] 9240#14508: *38 CreateFile() "D:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "web-tester.test", referrer: "http://web-tester.test/"
+2025/12/30 22:18:13 [warn] 3028#13052: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/erapor-smk.conf:10
+2025/12/30 22:18:13 [warn] 3028#13052: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/web-tester.conf:10
+2025/12/30 22:18:13 [warn] 3028#13052: protocol options redefined for 0.0.0.0:443 in D:\Web-Server\nginx/conf/sites-enabled/web-tester.conf:10
+2025/12/30 22:18:13 [warn] 3352#3840: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/erapor-smk.conf:10
+2025/12/30 22:18:13 [warn] 3352#3840: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/web-tester.conf:10
+2025/12/30 22:18:13 [warn] 3352#3840: protocol options redefined for 0.0.0.0:443 in D:\Web-Server\nginx/conf/sites-enabled/web-tester.conf:10
+2025/12/30 22:23:48 [error] 14448#9840: *8 directory index of "D:/Web-Server/www/erapor-smk/" is forbidden, client: 127.0.0.1, server: erapor-smk.test, request: "GET / HTTP/2.0", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2025/12/30 22:23:51 [error] 14448#9840: *10 directory index of "D:/Web-Server/www/web-tester/" is forbidden, client: 127.0.0.1, server: web-tester.test, request: "GET / HTTP/2.0", host: "web-tester.test", referrer: "https://dashboard.test/"
+2025/12/30 22:47:34 [warn] 14508#6468: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:47:34 [warn] 14508#6468: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:47:34 [warn] 11704#12176: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:47:34 [warn] 11704#12176: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:48:50 [warn] 15228#10712: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:48:50 [warn] 15228#10712: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:48:50 [warn] 13976#13020: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:48:50 [warn] 13976#13020: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:49:36 [warn] 6360#12608: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:49:36 [warn] 6360#12608: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:49:36 [warn] 1924#8324: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:49:36 [warn] 1924#8324: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:49:55 [warn] 8436#8996: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:49:55 [warn] 8436#8996: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:49:55 [warn] 9312#1440: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:49:55 [warn] 9312#1440: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:53:24 [warn] 6664#9900: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:53:24 [warn] 6664#9900: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:53:24 [warn] 6884#1036: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:53:24 [warn] 6884#1036: conflicting server name "web-tester2.test" on 0.0.0.0:443, ignored
+2025/12/30 22:54:35 [warn] 3028#12604: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/30 22:54:35 [warn] 9944#13944: conflicting server name "web-tester.test" on 0.0.0.0:443, ignored
+2025/12/31 00:18:51 [warn] 12928#8156: conflicting server name "dashboard.test" on 0.0.0.0:443, ignored
+2025/12/31 00:18:51 [warn] 12928#8156: conflicting server name "dashboard.test" on 0.0.0.0:443, ignored
+2025/12/31 00:18:51 [warn] 12928#8156: conflicting server name "phpmyadmin.test" on 0.0.0.0:443, ignored
+2025/12/31 00:18:51 [warn] 12928#8156: conflicting server name "phpmyadmin.test" on 0.0.0.0:443, ignored
+2025/12/31 00:18:51 [warn] 2496#7264: conflicting server name "dashboard.test" on 0.0.0.0:443, ignored
+2025/12/31 00:18:51 [warn] 2496#7264: conflicting server name "dashboard.test" on 0.0.0.0:443, ignored
+2025/12/31 00:18:51 [warn] 2496#7264: conflicting server name "phpmyadmin.test" on 0.0.0.0:443, ignored
+2025/12/31 00:18:51 [warn] 2496#7264: conflicting server name "phpmyadmin.test" on 0.0.0.0:443, ignored
+2025/12/31 01:02:20 [emerg] 9080#14932: cannot load certificate "D:/Web-Server/www/dashboard/ssl\dashboard.test.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(D:/Web-Server/www/dashboard/ssl\dashboard.test.crt, r) error:10000080:BIO routines::no such file)
+2025/12/31 01:03:59 [warn] 6912#13112: conflicting server name "dashboard.test" on 0.0.0.0:443, ignored
+2025/12/31 01:03:59 [warn] 6912#13112: conflicting server name "phpmyadmin.test" on 0.0.0.0:443, ignored
+2025/12/31 01:03:59 [warn] 12808#12184: conflicting server name "dashboard.test" on 0.0.0.0:443, ignored
+2025/12/31 01:03:59 [warn] 12808#12184: conflicting server name "phpmyadmin.test" on 0.0.0.0:443, ignored
+2025/12/31 01:21:41 [error] 8596#1492: *7 directory index of "D:/Web-Server/www/erapor-smk/" is forbidden, client: 127.0.0.1, server: erapor-smk.test, request: "GET / HTTP/2.0", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2025/12/31 01:23:07 [error] 15932#12700: *1 FastCGI sent in stderr: "PHP Warning:  require(D:\Web-Server\www\erapor-smk\public/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Web-Server\www\erapor-smk\public\index.php on line 13
+PHP Warning:  require(D:\Web-Server\www\erapor-smk\public/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Web-Server\www\erapor-smk\public\index.php on line 13
+PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Web-Server\www\erapor-smk\public/../vendor/autoload.php' (include_path='.;C:\php\pear') in D:\Web-Server\www\erapor-smk\public\index.php:13
+Stack trace:
+#0 {main}
+  thrown in D:\Web-Server\www\erapor-smk\public\index.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: erapor-smk.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2025/12/31 01:50:12 [error] 3728#14828: *64 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 7.4.33. in D:\Web-Server\www\erapor-smk\vendor\composer\platform_check.php:26
+Stack trace:
+#0 D:\Web-Server\www\erapor-smk\vendor\composer\autoload_real.php(25): require()
+#1 D:\Web-Server\www\erapor-smk\vendor\autoload.php(22): ComposerAutoloaderInit5f7c6961028622df3c9b49d07f3b670f::getLoader()
+#2 D:\Web-Server\www\erapor-smk\public\index.php(13): require('D:\\Web-Server\\w...')
+#3 {main}
+  thrown in D:\Web-Server\www\erapor-smk\vendor\composer\platform_check.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: erapor-smk.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2025/12/31 01:52:09 [error] 3728#14828: *69 CreateFile() "D:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 172.16.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "172.16.0.254", referrer: "http://172.16.0.254/"
+2025/12/31 01:59:14 [error] 3728#14828: *107 FastCGI sent in stderr: "PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 7.4.33. in D:\Web-Server\www\erapor-smk\vendor\composer\platform_check.php:26
+Stack trace:
+#0 D:\Web-Server\www\erapor-smk\vendor\composer\autoload_real.php(25): require()
+#1 D:\Web-Server\www\erapor-smk\vendor\autoload.php(22): ComposerAutoloaderInit5f7c6961028622df3c9b49d07f3b670f::getLoader()
+#2 D:\Web-Server\www\erapor-smk\public\index.php(13): require('D:\\Web-Server\\w...')
+#3 {main}
+  thrown in D:\Web-Server\www\erapor-smk\vendor\composer\platform_check.php on line 26" while reading response header from upstream, client: 172.16.0.1, server: erapor-smk.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2025/12/31 02:21:39 [error] 15560#13336: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 172.16.0.1, server: phpmyadmin.test, request: "POST /index.php?route=/ HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "phpmyadmin.test", referrer: "https://phpmyadmin.test/index.php?route=/"
+2025/12/31 02:42:39 [error] 15016#15344: *5 FastCGI sent in stderr: "PHP Fatal error:  Only files produced by either the PHP 8.2 or 8.3 ionCube Encoders can run on PHP 8.3.
+ The file D:\Web-Server\www\erapor-rdm\index.php has been encoded by the ionCube Encoder for PHP 7.2. in Unknown on line 0" while reading response header from upstream, client: 127.0.0.1, server: erapor-rdm.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-rdm.test", referrer: "https://dashboard.test/"
+2025/12/31 02:54:19 [error] 16376#12568: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test"
+2025/12/31 02:54:22 [error] 16376#12568: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test", referrer: "https://dashboard.test/"
+2025/12/31 02:54:29 [error] 16376#12568: *4 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: erapor-rdm.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-rdm.test", referrer: "https://dashboard.test/"
+2025/12/31 02:54:33 [error] 16376#12568: *6 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: erapor-smk.test, request: "GET /login HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2025/12/31 03:25:26 [error] 8496#15916: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: phpmyadmin.test, request: "POST /index.php?route=/ HTTP/2.0", upstream: "fastcgi://127.0.0.1:9082", host: "phpmyadmin.test", referrer: "https://phpmyadmin.test/index.php?route=/&db=db_rdm"
+2025/12/31 03:34:56 [error] 6448#12896: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "dashboard.test"
+2025/12/31 03:34:59 [error] 6448#12896: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "dashboard.test", referrer: "https://dashboard.test/"
+2025/12/31 03:35:08 [error] 6448#12896: *4 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "dashboard.test"
+2025/12/31 03:35:10 [error] 6448#12896: *4 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "dashboard.test", referrer: "https://dashboard.test/"
+2025/12/31 03:35:13 [error] 6448#12896: *4 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "dashboard.test"
+2025/12/31 03:35:15 [error] 6448#12896: *4 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "dashboard.test", referrer: "https://dashboard.test/"
+2025/12/31 03:35:18 [error] 6448#12896: *9 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: erapor-rdm.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9074", host: "erapor-rdm.test", referrer: "https://dashboard.test/"
+2025/12/31 03:35:42 [error] 13304#13604: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "dashboard.test"
+2025/12/31 03:35:44 [error] 13304#13604: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "dashboard.test", referrer: "https://dashboard.test/"
+2025/12/31 03:35:48 [error] 13304#13604: *4 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: erapor-rdm.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9074", host: "erapor-rdm.test", referrer: "https://dashboard.test/"
+2025/12/31 03:38:07 [notice] 2820#15992: using inherited sockets from "D:\Web-Server\nginx"
+2025/12/31 03:38:07 [emerg] 2820#15992: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring the rest of the variable
+2025/12/31 03:38:07 [emerg] 2820#15992: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring
+2025/12/31 03:38:07 [notice] 6252#14264: using inherited sockets from "D:\Web-Server\nginx"
+2025/12/31 03:38:07 [emerg] 6252#14264: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring the rest of the variable
+2025/12/31 03:38:07 [emerg] 6252#14264: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring
+2025/12/31 03:38:23 [notice] 15096#9548: using inherited sockets from "D:\Web-Server\nginx"
+2025/12/31 03:38:23 [emerg] 15096#9548: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring the rest of the variable
+2025/12/31 03:38:23 [emerg] 15096#9548: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring
+2025/12/31 03:38:23 [notice] 11280#12160: using inherited sockets from "D:\Web-Server\nginx"
+2025/12/31 03:38:23 [emerg] 11280#12160: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring the rest of the variable
+2025/12/31 03:38:23 [emerg] 11280#12160: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring
+2025/12/31 03:39:31 [notice] 5036#4412: using inherited sockets from "D:\Web-Server\nginx"
+2025/12/31 03:39:31 [emerg] 5036#4412: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring the rest of the variable
+2025/12/31 03:39:31 [emerg] 5036#4412: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring
+2025/12/31 03:39:31 [notice] 14408#12784: using inherited sockets from "D:\Web-Server\nginx"
+2025/12/31 03:39:31 [emerg] 14408#12784: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring the rest of the variable
+2025/12/31 03:39:31 [emerg] 14408#12784: invalid socket number "D:\Web-Server\nginx" in NGINX environment variable, ignoring
+2025/12/31 05:27:12 [warn] 12520#16196: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/domain.conf:2
+2025/12/31 05:27:12 [emerg] 12520#16196: invalid URL prefix in D:\Web-Server\nginx/conf/sites-enabled/domain.conf:9
+2025/12/31 05:38:29 [warn] 14756#5992: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/demo-app.conf:2
+2025/12/31 05:38:29 [warn] 8856#16220: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/demo-app.conf:2
+2025/12/31 05:49:54 [warn] 4044#15288: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/proxy-web.conf:2
+2025/12/31 05:49:54 [warn] 16380#15596: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/proxy-web.conf:2
+2025/12/31 05:56:39 [warn] 2152#16356: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/proxy-test.conf:2
+2025/12/31 05:56:39 [warn] 15512#10084: the "listen ... http2" directive is deprecated, use the "http2" directive instead in D:\Web-Server\nginx/conf/sites-enabled/proxy-test.conf:2
+2025/12/31 06:18:16 [error] 11912#4864: *5 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: proxy-test.test, request: "GET / HTTP/2.0", upstream: "http://127.0.0.1:3100/", host: "proxy-test.test", referrer: "https://dashboard.test/"
+2025/12/31 11:35:24 [emerg] 4416#13876: cannot load certificate "D:/Web-Server/www/dashboard/ssl\dashboard.test.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(D:/Web-Server/www/dashboard/ssl\dashboard.test.crt, r) error:10000080:BIO routines::no such file)
+2025/12/31 11:37:48 [error] 6132#9464: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: phpmyadmin.test, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "phpmyadmin.test"
+2025/12/31 11:42:30 [error] 6132#9464: *4 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: phpmyadmin.test, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "phpmyadmin.test"
+2025/12/31 11:42:35 [error] 6132#9464: *8 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test"
+2025/12/31 11:42:38 [error] 6132#9464: *8 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test", referrer: "http://dashboard.test/"
+2025/12/31 11:50:14 [error] 6132#9464: *12 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: phpmyadmin.test, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "phpmyadmin.test"
+2025/12/31 11:50:18 [error] 6132#9464: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test"
+2025/12/31 11:50:20 [error] 6132#9464: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test", referrer: "http://dashboard.test/"
+2025/12/31 11:50:24 [error] 6132#9464: *18 CreateFile() "D:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/12/31 11:50:46 [error] 6132#9464: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test"
+2025/12/31 11:50:48 [error] 6132#9464: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test", referrer: "http://dashboard.test/"
+2025/12/31 13:28:32 [warn] 7388#15324: conflicting server name "dashboard.test" on 0.0.0.0:443, ignored
+2025/12/31 13:28:32 [warn] 4120#15600: conflicting server name "dashboard.test" on 0.0.0.0:443, ignored
+2025/12/31 14:05:21 [error] 4120#16112: *3 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test"
+2025/12/31 14:05:25 [error] 4120#16112: *3 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test", referrer: "https://dashboard.test/"
+2025/12/31 14:49:53 [error] 12632#14444: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test"
+2025/12/31 14:49:56 [error] 12632#14444: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: dashboard.test, request: "GET /favicon.ico HTTP/2.0", upstream: "fastcgi://127.0.0.1:9000", host: "dashboard.test", referrer: "https://dashboard.test/"
+2025/12/31 15:00:59 [error] 3600#16960: *32 directory index of "D:/Web-Server/www/erapor-smk/" is forbidden, client: 127.0.0.1, server: erapor-smk.test, request: "GET / HTTP/2.0", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2025/12/31 15:01:51 [error] 3600#16960: *32 directory index of "D:/Web-Server/www/erapor-smk/" is forbidden, client: 127.0.0.1, server: erapor-smk.test, request: "GET / HTTP/2.0", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2025/12/31 15:02:10 [error] 15248#14800: *1 FastCGI sent in stderr: "PHP Warning:  require(D:\Web-Server\www\erapor-smk\public/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Web-Server\www\erapor-smk\public\index.php on line 13
+PHP Warning:  require(D:\Web-Server\www\erapor-smk\public/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Web-Server\www\erapor-smk\public\index.php on line 13
+PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Web-Server\www\erapor-smk\public/../vendor/autoload.php' (include_path='.;C:\php\pear') in D:\Web-Server\www\erapor-smk\public\index.php:13
+Stack trace:
+#0 {main}
+  thrown in D:\Web-Server\www\erapor-smk\public\index.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: erapor-smk.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2025/12/31 15:02:14 [error] 15248#14800: *1 FastCGI sent in stderr: "PHP Warning:  require(D:\Web-Server\www\erapor-smk\public/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Web-Server\www\erapor-smk\public\index.php on line 13
+PHP Warning:  require(D:\Web-Server\www\erapor-smk\public/../vendor/autoload.php): Failed to open stream: No such file or directory in D:\Web-Server\www\erapor-smk\public\index.php on line 13
+PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Web-Server\www\erapor-smk\public/../vendor/autoload.php' (include_path='.;C:\php\pear') in D:\Web-Server\www\erapor-smk\public\index.php:13
+Stack trace:
+#0 {main}
+  thrown in D:\Web-Server\www\erapor-smk\public\index.php on line 13" while reading response header from upstream, client: 127.0.0.1, server: erapor-smk.test, request: "GET / HTTP/2.0", upstream: "fastcgi://127.0.0.1:9083", host: "erapor-smk.test", referrer: "https://dashboard.test/"
+2026/01/14 14:47:33 [error] 13500#1740: *1 CreateFile() "D:\Web-Server\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2026/01/14 14:59:50 [error] 10672#10164: *5 FastCGI sent in stderr: "PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in D:\Web-Server\www\todo\view\todos.php on line 507" while reading upstream, client: 127.0.0.1, server: todo.test, request: "GET /index.php?page=todos HTTP/2.0", upstream: "fastcgi://127.0.0.1:9081", host: "todo.test", referrer: "https://todo.test/index.php?page=notes"
+2026/01/14 14:59:50 [error] 10672#10164: *5 FastCGI sent in stderr: "PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in D:\Web-Server\www\todo\view\todos.php on line 507" while reading upstream, client: 127.0.0.1, server: todo.test, request: "GET /index.php?page=todos HTTP/2.0", upstream: "fastcgi://127.0.0.1:9081", host: "todo.test", referrer: "https://todo.test/index.php?page=notes"
