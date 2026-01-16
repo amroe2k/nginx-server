@@ -1,0 +1,69 @@
+# Logs
+*.log
+logs/
+nginx/logs/*.log
+nginx/logs/*.pid
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Nginx temp directories - ignore contents but keep structure
+nginx/temp/client_body_temp/*
+nginx/temp/fastcgi_temp/*
+nginx/temp/proxy_temp/*
+nginx/temp/scgi_temp/*
+nginx/temp/uwsgi_temp/*
+!nginx/temp/*/.gitkeep
+
+# SSL Certificates and Keys
+*.crt
+*.key
+*.pem
+*.csr
+*.p12
+*.pfx
+
+# Configuration backups
+*.bak
+*.backup
+
+# PHP sessions and cache
+php/*/tmp/*
+php/*/sessions/*
+
+# Composer
+vendor/
+composer.lock
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# phpMyAdmin temp
+phpmyadmin/tmp/*
+
+# Keep structure with .gitkeep files
+!.gitkeep
