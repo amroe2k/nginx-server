@@ -28,7 +28,7 @@ Web Server Manager adalah alat manajemen lokal untuk pengembangan web di Windows
 2. Salin seluruh folder `D:\Web-Server` ke mesin pengembangan jika diperlukan.
 3. Jika belum ada Root CA lokal, jalankan `setup-root-ca.bat` sekali untuk membuat `ssl-ca\WebDevRootCA.crt` dan `WebDevRootCA.key`.
 4. Pastikan path OpenSSL pada baris atas `web-manager.bat` sesuai dengan lokasi OpenSSL Anda. Jika berbeda, update variabel `OPENSSL_PATH`.
-5. (Opsional) Impor `ssl-ca\WebDevRootCA.crt` ke "Trusted Root Certification Authorities" di Windows agar browser lokal menerima sertifikat tanpa peringatan.
+5. Impor `ssl-ca\WebDevRootCA.crt` ke "Trusted Root Certification Authorities" di Windows agar browser lokal menerima sertifikat tanpa peringatan.
 
 ### Cara Install Root CA (WebDevRootCA.crt) ke Windows
 
