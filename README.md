@@ -152,7 +152,7 @@ D:\Web-Server\
 ├── www\                          # Root web (document root)
 │   └── <nama_proyek>\            # Contoh: web-tester\
 │       ├── index.php             # Otomatis dibuat: <?php phpinfo(); ?>
-│       └── .env_origin           # Konfigurasi proyek (bukan .env)
+│       └── .env_origin           # Konfigurasi proyek untuk dashboard.test (bukan .env)
 │
 ├── nginx\
 │   └── conf\
