@@ -231,7 +231,14 @@ $globalStatus = getGlobalServerStatus();
 
         <!-- Daftar Proyek -->
         <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2 class="h5 mb-0 text-dark">Daftar Proyek (<span id="project-count"><?= count($projects) ?></span>)</h2>
+            <h2 class="h5 mb-0 text-dark">
+                Daftar Proyek
+                <span class="badge bg-primary align-middle ms-2" id="project-count"><?= count($projects) ?></span>
+            </h2>
+            <div class="form-check form-switch ms-2">
+                <input class="form-check-input" type="checkbox" id="toggleView">
+                <label class="form-check-label small" for="toggleView">Tampilan Ringkas</label>
+            </div>
         </div>
 
         <?php if (empty($projects)): ?>
@@ -240,13 +247,13 @@ $globalStatus = getGlobalServerStatus();
                 <p>Pastikan setiap proyek memiliki <code>.env_origin</code>.</p>
             </div>
         <?php else: ?>
-            <div class="row g-4" id="projects-container">
+            <!-- Tampilan Lengkap (default) -->
+            <div class="row g-4" id="projects-container-full">
                 <?php foreach ($projects as $name => $info): ?>
                     <div
-                        class="col-md-6 col-lg-4 project-item"
+                        class="col-md-6 col-lg-3 project-item"
                         data-php="<?= htmlspecialchars($info['php_version'] ?: '') ?>"
                         data-db="<?= htmlspecialchars(implode(',', $info['db']) ?: 'none') ?>">
-                        <!-- ✅ Card dengan background gradasi lembut -->
                         <div class="card project-card shadow-sm h-100" style="background: <?= getSoftGradient($name) ?>; backdrop-filter: blur(1px); border:1px solid rgba(11,23,38,0.06);">
                             <div class="card-body">
                                 <h5 class="card-title d-flex align-items-center gap-2">
@@ -261,21 +268,17 @@ $globalStatus = getGlobalServerStatus();
                                         </span>
                                     <?php endif; ?>
                                 </h5>
-
-                                <!-- ✅ Badge elegan untuk subdomain -->
                                 <span class="d-block mb-3">
                                     <a href="https://<?= htmlspecialchars($info['subdomain']) ?>" target="_blank" class="badge subdomain-badge">
                                         <i class="bi bi-box-arrow-up-right me-1"></i>
                                         <?= htmlspecialchars($info['subdomain']) ?>
                                     </a>
                                 </span>
-
                                 <p class="mb-2">
                                     <i class="bi bi-code-slash me-1 text-info"></i>
                                     <strong>PHP:</strong>
                                     <span class="badge badge-php"><?= htmlspecialchars($info['php_version'] ?: '–') ?></span>
                                 </p>
-
                                 <p class="mb-2"><strong>Database:</strong></p>
                                 <?php if (!empty($info['db'])): ?>
                                     <div class="d-flex flex-wrap gap-1 mb-2">
@@ -295,10 +298,54 @@ $globalStatus = getGlobalServerStatus();
                                 <?php else: ?>
                                     <p class="text-muted small mb-2">–</p>
                                 <?php endif; ?>
-
                                 <p class="small text-muted mb-0">
                                     <code><?= htmlspecialchars(str_replace('/', '\\', substr($info['path'], 0, 45)) . (strlen($info['path']) > 45 ? '…' : '')) ?></code>
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <!-- Tampilan Ringkas -->
+            <div class="row g-3" id="projects-container-simple">
+                <?php foreach ($projects as $name => $info): ?>
+                    <div
+                        class="col-12 col-md-6 col-lg-3 project-item"
+                        data-php="<?= htmlspecialchars($info['php_version'] ?: '') ?>"
+                        data-db="<?= htmlspecialchars(implode(',', $info['db']) ?: 'none') ?>">
+                        <div class="card shadow-sm h-100 border-0" style="background: <?= getSoftGradient($name) ?>;">
+                            <div class="card-body py-3 px-3 d-flex align-items-center gap-3">
+                                <div class="flex-shrink-0">
+                                    <span class="rounded-circle bg-white d-inline-flex align-items-center justify-content-center" style="width:38px;height:38px;font-size:1.1rem;font-weight:600;box-shadow:0 2px 6px rgba(0,0,0,0.06);color:#3a3a3a;">
+                                        <?= mb_substr($name,0,2) ?>
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="fw-semibold text-dark mb-1" style="font-size:1.08rem;line-height:1.1;">
+                                        <?= htmlspecialchars($name) ?>
+                                    </div>
+                                    <div class="mb-1">
+                                        <a href="https://<?= htmlspecialchars($info['subdomain']) ?>" target="_blank" class="text-decoration-none small">
+                                            <i class="bi bi-box-arrow-up-right me-1"></i><?= htmlspecialchars($info['subdomain']) ?>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 small">
+                                        <span class="badge bg-light text-dark border px-2 py-1">PHP <?= htmlspecialchars($info['php_version'] ?: '–') ?></span>
+                                        <?php if (!empty($info['db'])): ?>
+                                            <?php foreach ($info['db'] as $db): ?>
+                                                <?php if ($db === 'MySQL'): ?>
+                                                    <i class="bi bi-database text-success" title="MySQL"></i>
+                                                <?php elseif ($db === 'PostgreSQL'): ?>
+                                                    <i class="bi bi-database-fill text-primary" title="PostgreSQL"></i>
+                                                <?php elseif ($db === 'MongoDB'): ?>
+                                                    <i class="bi bi-bezier text-info" title="MongoDB"></i>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        <?php else: ?>
+                                            <span class="text-muted">–</span>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -317,8 +364,20 @@ $globalStatus = getGlobalServerStatus();
             const phpSelect = document.getElementById('filter-php');
             const dbChecks = document.querySelectorAll('.filter-db');
             const clearBtn = document.getElementById('btn-clear');
-            const projectItems = document.querySelectorAll('.project-item');
             const countEl = document.getElementById('project-count');
+            const toggleView = document.getElementById('toggleView');
+            const containerFull = document.getElementById('projects-container-full');
+            const containerSimple = document.getElementById('projects-container-simple');
+
+            // Set default: tampilan ringkas aktif
+            containerFull.style.display = 'none';
+            containerSimple.style.display = '';
+
+            function getVisibleItems() {
+                // Ambil semua .project-item yang visible di container aktif
+                const activeContainer = toggleView.checked ? containerFull : containerSimple;
+                return Array.from(activeContainer.querySelectorAll('.project-item'));
+            }
 
             function filterProjects() {
                 const selectedPhp = phpSelect.value;
@@ -327,31 +386,30 @@ $globalStatus = getGlobalServerStatus();
                     .map(cb => cb.value);
 
                 let visibleCount = 0;
-
-                projectItems.forEach(item => {
-                    const php = item.dataset.php;
-                    const dbs = item.dataset.db.split(',').filter(d => d);
-
-                    let show = true;
-
-                    if (selectedPhp && php !== selectedPhp) {
-                        show = false;
-                    }
-
-                    if (selectedDbs.length > 0) {
-                        if (selectedDbs.includes('none')) {
-                            if (dbs.length > 0) show = false;
-                        } else {
-                            const hasMatch = selectedDbs.some(db => dbs.includes(db));
-                            if (!hasMatch && dbs.length > 0) show = false;
-                            if (dbs.length === 0) show = false;
+                // Filter di kedua container
+                [containerFull, containerSimple].forEach(container => {
+                    if (!container) return;
+                    const items = container.querySelectorAll('.project-item');
+                    items.forEach(item => {
+                        const php = item.dataset.php;
+                        const dbs = item.dataset.db.split(',').filter(d => d);
+                        let show = true;
+                        if (selectedPhp && php !== selectedPhp) {
+                            show = false;
                         }
-                    }
-
-                    item.style.display = show ? '' : 'none';
-                    if (show) visibleCount++;
+                        if (selectedDbs.length > 0) {
+                            if (selectedDbs.includes('none')) {
+                                if (dbs.length > 0) show = false;
+                            } else {
+                                const hasMatch = selectedDbs.some(db => dbs.includes(db));
+                                if (!hasMatch && dbs.length > 0) show = false;
+                                if (dbs.length === 0) show = false;
+                            }
+                        }
+                        item.style.display = show ? '' : 'none';
+                        if (show && container === (toggleView.checked ? containerFull : containerSimple)) visibleCount++;
+                    });
                 });
-
                 countEl.textContent = visibleCount;
             }
 
@@ -362,6 +420,23 @@ $globalStatus = getGlobalServerStatus();
                 dbChecks.forEach(cb => cb.checked = false);
                 filterProjects();
             });
+
+            // Toggle tampilan
+            toggleView.addEventListener('change', function() {
+                if (toggleView.checked) {
+                    containerFull.style.display = '';
+                    containerSimple.style.display = 'none';
+                    toggleView.nextElementSibling.textContent = 'Tampilan Lengkap';
+                } else {
+                    containerFull.style.display = 'none';
+                    containerSimple.style.display = '';
+                    toggleView.nextElementSibling.textContent = 'Tampilan Ringkas';
+                }
+                filterProjects();
+            });
+
+            // Inisialisasi tampilan awal
+            filterProjects();
         });
     </script>
 </body>
