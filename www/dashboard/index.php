@@ -111,13 +111,14 @@ $globalStatus = getGlobalServerStatus();
                     </div>
 
                     <div class="col-6 col-md-6 col-lg-3 align-self-start">
-                        <div class="d-flex align-items-center gap-1 justify-content-center">
+                        <div class="d-flex align-items-center gap-2 justify-content-center">
+                            <i class="bi bi-database-fill-gear fs-5 text-warning me-1" title="MySQL"></i>
                             <?php if (!empty($globalStatus['mysql_running'])): ?>
                                 <i class="bi bi-check-circle-fill fs-4 text-success"></i>
                             <?php else: ?>
                                 <i class="bi bi-x-circle fs-4 text-secondary"></i>
                             <?php endif; ?>
-                            <div class="text-center">
+                            <div class="text-center ms-1">
                                 <div class="small text-muted">MySQL</div>
                                 <div>
                                     <?php if (!empty($globalStatus['mysql_running'])): ?>
@@ -131,13 +132,14 @@ $globalStatus = getGlobalServerStatus();
                     </div>
 
                     <div class="col-6 col-md-6 col-lg-3 align-self-start">
-                        <div class="d-flex align-items-center gap-1 justify-content-center">
+                        <div class="d-flex align-items-center gap-2 justify-content-center">
+                            <i class="bi bi-database-fill fs-5 text-primary me-1" title="PostgreSQL"></i>
                             <?php if (!empty($globalStatus['pg_running'])): ?>
                                 <i class="bi bi-check-circle-fill fs-4 text-success"></i>
                             <?php else: ?>
                                 <i class="bi bi-x-circle fs-4 text-secondary"></i>
                             <?php endif; ?>
-                            <div class="text-center">
+                            <div class="text-center ms-1">
                                 <div class="small text-muted">PostgreSQL</div>
                                 <div>
                                     <?php if (!empty($globalStatus['pg_running'])): ?>
@@ -151,13 +153,14 @@ $globalStatus = getGlobalServerStatus();
                     </div>
 
                     <div class="col-6 col-md-6 col-lg-3 align-self-start">
-                        <div class="d-flex align-items-center gap-1 justify-content-center">
+                        <div class="d-flex align-items-center gap-2 justify-content-center">
+                            <i class="bi bi-bezier fs-5 text-success me-1" title="MongoDB"></i>
                             <?php if (!empty($globalStatus['mongo_running'])): ?>
                                 <i class="bi bi-check-circle-fill fs-4 text-success"></i>
                             <?php else: ?>
                                 <i class="bi bi-x-circle fs-4 text-secondary"></i>
                             <?php endif; ?>
-                            <div class="text-center">
+                            <div class="text-center ms-1">
                                 <div class="small text-muted">MongoDB</div>
                                 <div>
                                     <?php if (!empty($globalStatus['mongo_running'])): ?>

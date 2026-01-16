@@ -4,19 +4,19 @@
 
 Web Server Manager adalah alat manajemen lokal untuk pengembangan web di Windows. Script utama `web-manager.bat` menyediakan pembuatan dan penghapusan proyek web dengan HTTPS otomatis (sertifikat ditandatangani oleh WebDevRootCA), pembuatan `index.php` dasar, penambahan entri `hosts`, dan pembuatan konfigurasi NGINX di `nginx\conf\sites-enabled`.
 
-Fitur utama:
+## Fitur Utama
 
-- Buat proyek baru dengan HTTPS otomatis menggunakan Root CA lokal
-- Hasilkan file `index.php` dan `.env_origin`
-- Tambah/hapus entri di `C:\Windows\System32\drivers\etc\hosts`
-- Buat dan hapus konfigurasi NGINX untuk tiap proyek
+- **Multi PHP Support:** Mendukung PHP versi 7.4, 8.0, 8.1, 8.2, 8.3, dan 8.4 (tersedia di folder `php/`)
+- **Auto Konfigurasi Nginx & Hosts Windows:** Semua konfigurasi Nginx dan file hosts Windows dapat diatur otomatis menggunakan skrip batch (`*.bat`) langsung dari CMD/Bash.
+- **Support SSL Lokal:** Otomatis menghasilkan sertifikat SSL lokal untuk setiap proyek, ditandatangani oleh Root CA lokal (`WebDevRootCA`).
 
 ## Persyaratan
 
 - Windows (jalankan sebagai Administrator)
 - OpenSSL (disarankan: Win64 OpenSSL) terinstal. Default path di script: `C:\Program Files\OpenSSL-Win64\bin\openssl.exe`.
+- Install OpenSSL: [https://slproweb.com/products/Win32OpenSSL.html](https://slproweb.com/products/Win32OpenSSL.html)
 - NGINX tersedia di folder `nginx/` pada root proyek
-- PHP (beberapa versi) tersedia di folder `php/` pada root proyek
+- PHP (multi versi: 7.4, 8.0, 8.1, 8.2, 8.3, 8.4) tersedia di folder `php/` pada root proyek
 
 ## Instalasi & Persiapan
 
@@ -79,15 +79,15 @@ CertUtil: -addstore command completed successfully.
   - Membuat konfigurasi NGINX di `nginx\conf\sites-enabled\<nama_proyek>.conf`
   - Membuat `index.php` dan `.env_origin`
 - Pilih [2] untuk menghapus proyek (script akan menghapus folder proyek, file konfigurasi NGINX, dan entri hosts terkait). Pastikan NGINX dimatikan sebelum menghapus.
-- Setelah membuat atau menghapus proyek, restart NGINX agar konfigurasi baru berlaku.
+- Setelah membuat atau menghapus proyek, restart NGINX agar konfigurasi baru berlaku (`start-webserver.bat`)
 
 ## Urutan Perintah yang harus dijalankan :
 
-1. `setup-root-ca.bat` (generate SSL untuk di Import ke Windows pada folder ssl-ca)
-2. `generate-ssl.bat` (generate ulang ssl key dashboard dan phpmyadmin)
-3. `edit-hosts.bat` (edit file hosts windows)
+1. `setup-root-ca.bat` (Generate SSL untuk di Import ke Windows pada folder ssl-ca)
+2. `generate-ssl.bat` (Generate ulang ssl key dashboard dan phpmyadmin)
+3. `edit-hosts.bat` (Edit file hosts windows)
 4. `web-manager.bat` (Tambah/Hapus proyek)
-5. `start-webserver.bat` (aktifkan Nginx Web Server)
+5. `start-webserver.bat` (Aktifkan Nginx Web Server)
 
 ## Tools Web
 
@@ -99,11 +99,38 @@ Beberapa alat web yang umum tersedia di lingkungan pengembangan ini:
 
 ## Database yang didukung (Install sebagai service di Windows)
 
+### Download Database
+
+- [Download MySQL v.8](https://dev.mysql.com/downloads/installer/)
+- [Download PostgreSQL v.16](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+- [Download MongoDB v.8.2.3](https://www.mongodb.com/try/download/community)
+
 Database berikut didukung dan biasanya dijalankan sebagai service pada mesin pengembang lokal:
 
 - MySQL : 127.0.0.1:3306
 - MongoDB : 127.0.0.1:27017
 - PostgreSQL: 127.0.0.1:5432
+
+## Versi PHP yang Didukung
+
+- PHP 7.4
+- PHP 8.0
+- PHP 8.1
+- PHP 8.2
+- PHP 8.3
+- PHP 8.4
+
+## Auto Konfigurasi Nginx & Hosts Windows
+
+- Semua konfigurasi Nginx dan file hosts Windows dapat diatur otomatis menggunakan skrip batch (`*.bat`) langsung dari CMD/Bash.
+- Skrip utama: `web-manager.bat`, `edit-hosts.bat`, `generate-ssl.bat`, dll.
+- Tidak perlu edit manual, cukup jalankan skrip sesuai kebutuhan.
+
+## Support SSL Lokal
+
+- Setiap proyek otomatis mendapatkan sertifikat SSL lokal.
+- Sertifikat ditandatangani oleh Root CA lokal (`WebDevRootCA`).
+- SSL lokal memudahkan pengujian HTTPS tanpa peringatan browser.
 
 ## Lokasi penting
 
@@ -166,7 +193,6 @@ Buat issue baru dengan:
 
 - Root CA yang dibuat oleh `setup-root-ca.bat` sebaiknya hanya digunakan untuk pengembangan lokal.
 - Jangan gunakan sertifikat CA lokal untuk layanan publik.
-
 
 ## Kontak
 
