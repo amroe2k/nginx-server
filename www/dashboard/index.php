@@ -230,7 +230,7 @@ $globalStatus = getGlobalServerStatus();
         </div>
 
         <!-- Daftar Proyek -->
-        <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-3" id="project-header">
             <h2 class="h5 mb-0 text-dark">
                 Daftar Proyek
                 <span class="badge bg-primary align-middle ms-2" id="project-count"><?= count($projects) ?></span>
@@ -248,7 +248,7 @@ $globalStatus = getGlobalServerStatus();
             </div>
         <?php else: ?>
             <!-- Tampilan Lengkap (default) -->
-            <div class="row g-4" id="projects-container-full">
+            <div class="row g-4 mb-4 pb-4" id="projects-container-full">
                 <?php foreach ($projects as $name => $info): ?>
                     <div
                         class="col-md-6 col-lg-3 project-item"
@@ -307,7 +307,7 @@ $globalStatus = getGlobalServerStatus();
                 <?php endforeach; ?>
             </div>
             <!-- Tampilan Ringkas -->
-            <div class="row g-3" id="projects-container-simple">
+            <div class="row g-3 mb-4 pb-4" id="projects-container-simple">
                 <?php foreach ($projects as $name => $info): ?>
                     <div
                         class="col-12 col-md-6 col-lg-3 project-item"

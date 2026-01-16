@@ -1,3 +1,7 @@
+/* Tambahan jarak bawah agar konten tidak tertutup footer */
+.container {
+  padding-bottom: 5rem;
+}
 # Efek glow pada hover card mode lengkap .project-card:hover {
   box-shadow: 0 6px 16px rgba(138, 180, 248, 0.25),
     0 0 0 8px rgba(67, 97, 238, 0.13) !important;
